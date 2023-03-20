@@ -1,0 +1,37 @@
+
+
+ .MoviesList{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ };
+ .LinkItem{
+    width: 400px;
+        background-color: red($color: #000000);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-decoration: none;
+        margin-bottom: 40px;
+        transition: scale 250ms linear, box-shadow 250ms linear;
+    
+        &:hover {
+            scale: calc(1.03);
+            box-shadow: 0px 0px 20px 8px gray;
+        }
+    
+        &:nth-last-child(-n + 4) {
+            margin-bottom: 0;
+        }
+ };
+ .MovieTitle{
+        text-align: center;
+        font-size: 25px;
+        color: white;
+ }
+ .TrendingTitle{
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+ }
