@@ -10,7 +10,7 @@ import {
 } from '../Pages.styled';
 
 
-export const Home = () => {
+const Home = () => {
   const [trendings, setTrendings] = useState([]);
 
   useEffect(() => {
@@ -54,3 +54,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

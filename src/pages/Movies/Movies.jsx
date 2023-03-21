@@ -11,7 +11,7 @@ import {
   LinkItem,
 } from '../Pages.styled';
 
-export const Movies = () => {
+ const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
   const [input, setInput] = useState('');
@@ -90,3 +90,4 @@ export const Movies = () => {
     </>
   );
 };
+export default Movies;
